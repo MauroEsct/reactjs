@@ -10,9 +10,12 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="container-fluid">
       <NavBar cartCount={cartCount} />
-      <ItemListContainer handleAddToCart={handleAddToCart} />
+      <ItemListContainer 
+        greeting="¡Hola, bienvenido a mi tienda!" 
+        handleAddToCart={handleAddToCart} 
+      />
     </div>
   );
 }
